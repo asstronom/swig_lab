@@ -7,9 +7,9 @@
 from sys import version_info as _swig_python_version_info
 # Import the low-level C/C++ module
 if __package__ or "." in __name__:
-    from . import _gfg
+    from . import _shliakh
 else:
-    import _gfg
+    import _shliakh
 
 try:
     import builtins as __builtin__
@@ -59,11 +59,6 @@ class _SwigNonDynamicMeta(type):
 
 
 
-def fact(n1):
-    return _gfg.fact(n1)
-
-def my_mod(m, n):
-    return _gfg.my_mod(m, n)
-
-cvar = _gfg.cvar
+def discriminant(a, b, c):
+    return _shliakh.discriminant(a, b, c)
 
